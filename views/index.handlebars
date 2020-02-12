@@ -10,13 +10,48 @@
 <section>
  <div class="container">
   <div class="row">
-   <div class="col-sm-6 text-center">
-    <h3>Now Serving:</h3>
-    {{!-- Burgers where devoured = false --}}
+   <div class="col-md-6 text-center">
+    <div class="innerDiv">
+     <h3>Now Serving:</h3>
+     {{!-- Burgers where devoured = false --}}
+     {{#each burgers}}
+     {{#unless devoured}}
+     <div class="topBotMarg">
+      <div class="d-flex justify-content-between">
+       <span>
+        <i class="fas fa-hamburger fa-2x"></i>
+        <p class="leftMarg inlineP">
+         {{burger_name}}
+        </p>
+       </span>
+       <button type="button" class="btn btn-dark btn-sm leftMarg devour" data-id="{{id}}">Devour!</button>
+      </div>
+     </div>
+     <hr>
+     {{/unless}}
+     {{/each}}
+    </div>
    </div>
-   <div class="col-sm-6 text-center">
-    <h3>Already Served:</h3>
-    {{!-- Burgers where devoured = true --}}
+   <div class="col-md-6 text-center">
+    <div class="innerDiv">
+     <h3>Already Served:</h3>
+     {{!-- Burgers where devoured = true --}}
+     {{#each burgers}}
+     {{#if devoured}}
+     <div class="topBotMarg">
+      <div class="d-flex justify-content-start">
+       <span>
+        <i class="fas fa-hamburger fa-2x"></i>
+        <p class="leftMarg inlineP">
+         {{burger_name}}
+        </p>
+       </span>
+      </div>
+     </div>
+     <hr>
+     {{/if}}
+     {{/each}}
+    </div>
    </div>
   </div>
  </div>
@@ -29,7 +64,7 @@
     <form id="newBurger">
      <div class="d-flex justify-content-center">
       <input type="text" class="form-control" id="newBurgerName" placeholder="Enter burger order here...">
-      <button type="submit" class="btn btn-warning">Submit</button>
+      <button type="submit" class="btn btn-warning leftMarg">Submit</button>
      </div>
     </form>
     <br><br>

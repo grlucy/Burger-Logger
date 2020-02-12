@@ -1,3 +1,20 @@
-button {
+h3 {
+  margin: 10px 0 30px;
+}
+.leftMarg {
   margin: 0 0 0 15px;
+}
+.topBotMarg {
+  margin: 10px 0;
+}
+.col-md-6 {
+  padding: 20px 10px;
+}
+.innerDiv {
+  background-color: aqua;
+  border-radius: 0.25rem;
+  padding: 15px calc(2px + 5vw);
+}
+.inlineP {
+  display: inline;
 }

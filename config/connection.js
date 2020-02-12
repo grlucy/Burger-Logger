@@ -1,6 +1,6 @@
 // Enter your MySQL password in the string below:
 
-const password = "HairNailsBones!";
+const password = "";
 
 // MySQL connection
 
