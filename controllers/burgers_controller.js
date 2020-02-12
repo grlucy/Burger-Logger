@@ -16,7 +16,13 @@ router.get("/", function(req, res) {
   });
 });
 
-//insertOne
+router.post("/api/burgers", function(req, res) {
+  const value = req.body.burger_name;
+  burger.insertOne(value, function(result) {
+    console.log("inserted one: " + value);
+    res.json({ id: result.insertId });
+  });
+});
 //updateOne
 
 // Export routes

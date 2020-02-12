@@ -13,7 +13,7 @@ const orm = {
     });
   },
   insertOne: function(table, column, value, cb) {
-    const query = `INSERT INTO ?? (??) VALUES ("?")`;
+    const query = `INSERT INTO ?? (??) VALUES (?)`;
     connection.query(query, [table, column, value], function(err, result) {
       if (err) throw err;
       cb(result);
