@@ -5,9 +5,9 @@ const connection = require("./connection");
 // Create the ORM
 
 const orm = {
-  selectAll: function(table, column, value, cb) {
-    const query = `SELECT * FROM ?? WHERE ?? = ?`;
-    connection.query(query, [table, column, value], function(err, result) {
+  selectAll: function(table, cb) {
+    const query = `SELECT * FROM ??`;
+    connection.query(query, [table], function(err, result) {
       if (err) throw err;
       cb(result);
     });

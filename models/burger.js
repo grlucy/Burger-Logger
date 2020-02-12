@@ -5,8 +5,8 @@ const orm = require("../config/orm");
 // Create code that will call the ORM functions using burger-specific input
 
 const burger = {
-  selectAll: function(value, cb) {
-    orm.selectAll("burgers", "devoured", value, function(res) {
+  selectAll: function(cb) {
+    orm.selectAll("burgers", function(res) {
       cb(res);
     });
   },
