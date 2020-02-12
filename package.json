@@ -1,0 +1,25 @@
+{
+  "name": "burger-logger",
+  "version": "1.0.0",
+  "description": "A Node.js/Express app using MySQL as a database and Handlebars to serve HTML",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grlucy/Burger-Logger.git"
+  },
+  "author": "Gina Lucy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grlucy/Burger-Logger/issues"
+  },
+  "homepage": "https://github.com/grlucy/Burger-Logger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
