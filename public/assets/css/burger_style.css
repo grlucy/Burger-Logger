@@ -1,5 +1,32 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #3b768a,
+    #3b768a 45%,
+    #ece7e0 45%,
+    #ece7e0 90%,
+    #d69200 90%
+  );
+}
+.page-height {
+  min-height: 100vh;
+}
+h1 {
+  font-family: "Baloo Bhaina", cursive;
+  font-size: 3.5rem;
+  color: #fff;
+  -webkit-text-stroke: 2px black;
+}
 h3 {
+  font-family: "Baloo Bhaina", cursive;
   margin: 10px 0 30px;
+}
+p {
+  font-family: "Comfortaa", sans-serif;
+}
+button,
+input {
+  font-family: "Comfortaa", sans-serif;
 }
 .leftMarg {
   margin: 0 0 0 15px;
@@ -7,14 +34,22 @@ h3 {
 .topBotMarg {
   margin: 10px 0;
 }
+.col,
 .col-md-6 {
   padding: 20px 10px;
 }
 .innerDiv {
-  background-color: aqua;
+  background-color: #fff;
+  border: 1px solid #bbb;
   border-radius: 0.25rem;
-  padding: 15px calc(2px + 5vw);
+  padding: 15px calc(2px + 3.5vw);
 }
 .inlineP {
   display: inline;
+}
+.greyed {
+  color: #999;
+}
+#newBurgerName {
+  min-width: 150px;
 }
