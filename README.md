@@ -9,3 +9,4 @@ A responsive Node.js/Express app using MySQL as a database and Handlebars to ser
 ## Credits
 
 - 'amirali-mirhashemian-pjGnlZTtQ-Y-unsplash.jpg' Photo by amirali mirhashemian on Unsplash
+- 'pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg' Photo by Pablo Merchán Montes on Unsplash

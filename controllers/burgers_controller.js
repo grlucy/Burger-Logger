@@ -19,11 +19,20 @@ router.get("/", function(req, res) {
 router.post("/api/burgers", function(req, res) {
   const value = req.body.burger_name;
   burger.insertOne(value, function(result) {
-    console.log("inserted one: " + value);
     res.json({ id: result.insertId });
   });
 });
-//updateOne
+
+router.put("/api/burgers/:id", function(req, res) {
+  const id = req.params.id;
+  burger.updateOne(id, function(result) {
+    if (result.changedRows === 0) {
+      return res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  });
+});
 
 // Export routes
 
