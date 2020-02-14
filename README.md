@@ -1,6 +1,10 @@
 # Burger-Logger
 
-A responsive Node.js/Express app using MySQL as a database and Handlebars to serve HTML
+Deployed at XXXX
+
+## Description
+
+A responsive, RESTful Node.js/Express app using MySQL as a database and Handlebars to serve HTML. The app enables users to read, create, and update data about burgers through a mobile-friendly browser interface.
 
 | Technologies used                                                                                               |
 | --------------------------------------------------------------------------------------------------------------- |
