@@ -13,3 +13,4 @@ A responsive, RESTful Node.js/Express app using MySQL as a database and Handleba
 ## Credits
 
 - 'pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg' Photo by Pablo Merchán Montes on Unsplash
+- "Using dotenv with NodeJS and Environment Variables" tutorial by Steve Griffith at https://www.youtube.com/watch?v=5WFyhsnU4Ik

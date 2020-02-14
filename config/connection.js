@@ -1,6 +1,4 @@
-// Enter your MySQL password in the string below:
-
-const password = "";
+require("dotenv").config();
 
 // MySQL connection
 
@@ -10,7 +8,7 @@ const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: password,
+  password: process.env.PASSWORD,
   database: "burgers_db"
 });
 
