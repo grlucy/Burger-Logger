@@ -12,7 +12,7 @@ A responsive, RESTful Node.js/Express app using MySQL as a database and Handleba
 
 ## Demo
 
-!(Burger-Logger Demo)[/screenshots/Burger-Logger-demo.gif]
+![Burger-Logger Demo](/screenshots/Burger-Logger-demo.gif)
 
 ## Installation
 
