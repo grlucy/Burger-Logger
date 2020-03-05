@@ -115,3 +115,6 @@ input {
 #newBurgerName {
   min-width: 150px;
 }
+.deleteBtn {
+  opacity: 0.5;
+}

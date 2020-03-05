@@ -47,13 +47,14 @@
       {{#each burgers}}
       {{#if devoured}}
       <div class="topBotMarg">
-       <div class="d-flex justify-content-start">
+       <div class="d-flex justify-content-between">
         <span>
          <i class="fas fa-hamburger fa-2x greyed"></i>
          <p class="leftMarg inlineP greyed">
           {{burger_name}}
          </p>
         </span>
+        <button type="button" class="btn btn-dark btn-sm leftMarg deleteBtn" data-id="{{id}}">Delete</button>
        </div>
       </div>
       <hr>
