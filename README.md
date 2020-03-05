@@ -1,6 +1,6 @@
 # Burger-Logger
 
-Deployed at https://vast-refuge-81428.herokuapp.com/
+Deployed at https://burger-logger-2020.herokuapp.com/
 
 ## Description
 
